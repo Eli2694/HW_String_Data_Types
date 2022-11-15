@@ -108,7 +108,21 @@ namespace String_Data_Types_HW
             //match = true
 
             
-            
+            string strReplace(string str1,string str2)
+            {
+                string res;
+                if(str1.Contains(str2))
+                {
+                    res = str1.Replace(str2, "*");
+                    return res;
+                }
+                else
+                {
+                    return str1;
+                }
+            }
+
+            string str = strReplace("hello World", "rl");
 
 
 
